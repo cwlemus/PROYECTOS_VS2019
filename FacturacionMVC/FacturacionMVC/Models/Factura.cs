@@ -10,5 +10,11 @@ namespace FacturacionMVC.Models
         public int IdFactura { get; set; }
         public int IdCliente { get; set; }     
         public decimal MONTO { get; set;}       
+
+        public decimal CalcularMonto(decimal subtotal)
+        {
+            var total = subtotal * ((decimal)subtotal);
+            return total;
+        }
     }
 }
