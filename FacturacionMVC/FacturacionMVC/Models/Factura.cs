@@ -10,5 +10,6 @@ namespace FacturacionMVC.Models
         public int IdFactura { get; set; }
         public int IdCliente { get; set; }
         public string NIT { get; set; }
+        public decimal MONTO { get; set;}
     }
 }
