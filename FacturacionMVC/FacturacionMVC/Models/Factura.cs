@@ -8,8 +8,7 @@ namespace FacturacionMVC.Models
     public class Factura
     {
         public int IdFactura { get; set; }
-        public int IdCliente { get; set; }
-        public string NIT { get; set; }
-        public decimal MONTO { get; set;}
+        public int IdCliente { get; set; }     
+        public decimal MONTO { get; set;}       
     }
 }
