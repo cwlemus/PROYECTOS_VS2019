@@ -14,8 +14,8 @@ namespace FacturacionMVC.Models
 
         public decimal CalcularMonto(decimal subtotal)
         {
-            var total = subtotal * ((decimal)subtotal);
-            return total;
+            var total = (subtotal * ((decimal)1.13));
+            return total-=(decimal)0.15;
         }
     }
 }
